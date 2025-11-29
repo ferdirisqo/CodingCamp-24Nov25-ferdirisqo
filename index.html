@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h1 class="title">Todo List</h1>
+
+        <div class="form-row">
+          <input type="text" id="todo-input" placeholder="Add a todo..." />
+          <input type="date" id="date-input" placeholder="dd / mm / yyyy" />
+          <button id="add-btn">+</button>
+        </div>
+
+        <div class="actions-row">
+          <select id="filter-select">
+            <option value="all">All</option>
+            <option value="completed">Completed</option>
+            <option value="pending">Pending</option>
+          </select>
+          <button id="delete-all">Delete All</button>
+        </div>
+
+        <div class="table-wrapper">
+          <table class="todo-table">
+            <thead>
+              <tr>
+                <th>Task</th>
+                <th>Due Date</th>
+                <th>Status</th>
+                <th style="width: 140px">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="todo-table-body"></tbody>
+          </table>
+        </div>
+
+        <ul id="todo-list"></ul>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
